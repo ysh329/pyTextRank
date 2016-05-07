@@ -16,9 +16,18 @@ __author__ = 'yuens'
 import jieba
 
 ################################### PART2 CLASS && FUNCTION ###########################
+input_str = "我今天看到他，   发现他心情不好，可   能是因为天气不好的缘故吧。"
 
-for i in list(jieba.cut("我今天看到他，發現他心情不好")): print i
+def clean_str(input_str):
+    cleaned_str = input_str.replace(" ", "")
+    return cleaned_str
 
-import mxnet
+cleaned_str = clean_str(input_str)
+split_str_generator = jieba.cut(cleaned_str)
 
-print mxnet
+def create_net():
+    import networkx
+    pass
+
+for i in split_str_generator: print i
+
