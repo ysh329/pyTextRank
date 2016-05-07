@@ -24,10 +24,15 @@ def clean_str(input_str):
 
 cleaned_str = clean_str(input_str)
 split_str_generator = jieba.cut(cleaned_str)
+for i in split_str_generator: print i
+
 
 def create_net():
     import networkx
     pass
 
-for i in split_str_generator: print i
+def textRank():
+    pass
+
+
 
