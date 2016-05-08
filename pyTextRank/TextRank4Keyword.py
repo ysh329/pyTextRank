@@ -58,9 +58,18 @@ def get_window_2d_list(word_list, split_stopword_dir=None):
     if isinstance(split_stopword_dir, str):
         with open(split_stopword_dir, "rb") as f:
             split_stopword_str_list = map(lambda line: line.strip().decode("utf8"), f.readlines())
-    else:
+
+        # 找到所有window的下标对
         pass
 
+        # 取出所有window（每个window相当于一个一维list）成一个二维list
+        pass
+
+    else:
+        # 没有指定stopword
+        # 固定每个window的单词个数k
+        # 进行切分
+        pass
 
 def create_net():
     import networkx
