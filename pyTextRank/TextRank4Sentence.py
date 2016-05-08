@@ -16,9 +16,3 @@ __author__ = 'yuens'
 import jieba
 
 ################################### PART2 CLASS && FUNCTION ###########################
-
-for i in list(jieba.cut("我今天看到他，发现他心情不好")): print i
-
-import mxnet
-
-print mxnet
